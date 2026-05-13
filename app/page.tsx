@@ -35,6 +35,41 @@ export default function PortfolioHome() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
+
+      <nav className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a href="#" className="flex items-center gap-3">
+            <img
+              src="/icon.png"
+              alt="Cat logo"
+              className="h-8 w-8 rounded-lg"
+            />
+            <span className="font-semibold text-white">Eamon</span>
+          </a>
+
+          <div className="flex items-center gap-5">
+            <a
+              href="#career"
+              className="text-sm text-slate-300 transition hover:text-violet-400"
+            >
+              Career
+            </a>
+            <a
+              href="#projects"
+              className="text-sm text-slate-300 transition hover:text-violet-400"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className="text-sm text-slate-300 transition hover:text-violet-400"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-16">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -101,7 +136,7 @@ export default function PortfolioHome() {
         </motion.div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-20">
+      <section id="projects" className="mx-auto max-w-6xl px-6 pb-20">
         <div className="mb-8 flex items-end justify-between gap-4">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.25em] text-violet-400">Projects</p>
