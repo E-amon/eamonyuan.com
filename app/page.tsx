@@ -55,7 +55,7 @@ export default function PortfolioHome() {
               Career
             </a>
             <a
-              href="#projects"
+              href="/projects"
               className="text-sm text-slate-300 transition hover:text-violet-400"
             >
               Projects
