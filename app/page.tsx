@@ -3,6 +3,7 @@
 import React from "react";
 import { Mail, ExternalLink, FileText } from "lucide-react";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function PortfolioHome() {
   const projects = [
@@ -65,6 +66,7 @@ export default function PortfolioHome() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-400 hover:text-violet-400"
               >
+                <FaGithub size={18} />
                 GitHub
               </a>
               <a
@@ -73,6 +75,7 @@ export default function PortfolioHome() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-400 hover:text-violet-400"
               >
+                <FaLinkedin size={18} />
                 LinkedIn
               </a>
             </div>
@@ -110,7 +113,7 @@ export default function PortfolioHome() {
             rel="noreferrer"
             className="hidden items-center gap-2 text-sm font-semibold text-violet-400 hover:text-violet-200 sm:inline-flex"
           >
-            View GitHub <ExternalLink size={16} />
+            <FaGithub size={18} /> View GitHub <ExternalLink size={16} />
           </a>
         </div>
 
