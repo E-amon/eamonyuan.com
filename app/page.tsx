@@ -8,19 +8,19 @@ export default function PortfolioHome() {
   const projects = [
     {
       title: "Crypto Risk & Prediction Dashboard",
-      status: "In progress",
+      status: "In Progress",
       imageLinks:"/images/img_placeholder_1.JPG",
       description:
-        "A Python and Streamlit analytics platform for crypto market analysis, benchmark strategy backtesting, risk metrics, ML prediction, and anomaly detection.",
-      tags: ["Python", "Streamlit", "pandas", "scikit-learn", "Quant"]
+        "This project is in progress.",
+      tags: ["Python", "Quant"]
     },
     {
       title: "Rail Break Prediction Project",
-      status: "Industry project",
+      status: "Industry Placement",
       imageLinks:"/images/img_placeholder_2.JPG",
       description:
         "Applied feature engineering and ML workflows on rail sensor data, improving predictive performance and optimising data pipelines.",
-      tags: ["Databricks", "PySpark", "SQL", "Machine Learning"]
+      tags: ["Databricks", "PySpark", "SQL", "Machine Learning", "XGBoost", "Feature Engineering", "Feature Selection", "Data Visualise"]
     },
     {
       title: "Quant Trading Research",
@@ -42,7 +42,7 @@ export default function PortfolioHome() {
           className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center"
         >
           <div>
-            <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-cyan-300">
+            <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-violet-400">
               Personal Website
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -55,7 +55,7 @@ export default function PortfolioHome() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="mailto:eamon.yuan@outlook.com"
-                className="inline-flex items-center gap-2 rounded-2xl bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:bg-cyan-300"
+                className="inline-flex items-center gap-2 rounded-2xl bg-violet-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-violet-500/20 transition hover:bg-violet-200"
               >
                 <Mail size={18} /> Contact Me
               </a>
@@ -63,7 +63,7 @@ export default function PortfolioHome() {
                 href="https://github.com/E-amon"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-300"
+                className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-400 hover:text-violet-400"
               >
                 GitHub
               </a>
@@ -71,7 +71,7 @@ export default function PortfolioHome() {
                 href="https://www.linkedin.com/in/eamon-yuan"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-300"
+                className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-400 hover:text-violet-400"
               >
                 LinkedIn
               </a>
@@ -82,15 +82,15 @@ export default function PortfolioHome() {
             <h2 className="text-xl font-semibold text-white">Current Focus</h2>
             <div className="mt-5 space-y-4 text-sm text-slate-300">
               <div className="rounded-2xl bg-slate-800/80 p-4">
-                <p className="font-semibold text-cyan-300">Quant & Data Science</p>
+                <p className="font-semibold text-violet-400">Quant & Data Science</p>
                 <p className="mt-1">Backtesting, risk analytics, ML prediction, and data engineering.</p>
               </div>
               <div className="rounded-2xl bg-slate-800/80 p-4">
-                <p className="font-semibold text-cyan-300">Portfolio Build</p>
+                <p className="font-semibold text-violet-400">Portfolio Build</p>
                 <p className="mt-1">Publishing clean, reproducible projects with live demos and documentation.</p>
               </div>
               <div className="rounded-2xl bg-slate-800/80 p-4">
-                <p className="font-semibold text-cyan-300">Career Direction</p>
+                <p className="font-semibold text-violet-400">Career Direction</p>
                 <p className="mt-1">Targeting data science, quant research, data analytics, and software engineering roles.</p>
               </div>
             </div>
@@ -101,14 +101,14 @@ export default function PortfolioHome() {
       <section className="mx-auto max-w-6xl px-6 pb-20">
         <div className="mb-8 flex items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.25em] text-cyan-300">Projects</p>
+            <p className="text-sm font-medium uppercase tracking-[0.25em] text-violet-400">Projects</p>
             <h2 className="mt-3 text-3xl font-bold text-white">Featured Work</h2>
           </div>
           <a
             href="https://github.com/E-amon"
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-2 text-sm font-semibold text-cyan-300 hover:text-cyan-200 sm:inline-flex"
+            className="hidden items-center gap-2 text-sm font-semibold text-violet-400 hover:text-violet-200 sm:inline-flex"
           >
             View GitHub <ExternalLink size={16} />
           </a>
@@ -120,7 +120,7 @@ export default function PortfolioHome() {
               key={project.title}
               className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-xl shadow-black/20"
             >
-              <div className="mb-4 inline-flex rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-300">
+              <div className="mb-4 inline-flex rounded-full bg-violet-400/10 px-3 py-1 text-xs font-semibold text-violet-400">
                 {project.status}
               </div>
               <h3 className="text-xl font-semibold text-white">{project.title}</h3>
@@ -146,7 +146,7 @@ export default function PortfolioHome() {
                 <img className="size-full absolute top-0 inset-s-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" src={project.imageLinks} alt={project.title}/>
               </div>
               <div className="p-4">
-                <div className="mb-4 inline-flex rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-300">
+                <div className="mb-4 inline-flex rounded-full bg-violet-400/10 px-3 py-1 text-xs font-semibold text-violet-400">
                   {project.status}
                 </div>
                 <h3 className="text-xl font-semibold text-white">
@@ -159,7 +159,7 @@ export default function PortfolioHome() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-300"
+                      className="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-300  hover:border-violet-400 hover:text-violet-400"
                     >
                       {tag}
                     </span>
@@ -184,7 +184,7 @@ export default function PortfolioHome() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-300"
+                className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-400 hover:text-violet-400"
               >
                 <FileText size={18} /> More Information Coming Soon
               </a>
