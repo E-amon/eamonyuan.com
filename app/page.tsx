@@ -55,7 +55,7 @@ export default function PortfolioHome() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="mailto:eamon.yuan@outlook.com"
+                href="#contact"
                 className="inline-flex items-center gap-2 rounded-2xl bg-violet-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-violet-500/20 transition hover:bg-violet-200"
               >
                 <Mail size={18} /> Contact Me
@@ -117,31 +117,6 @@ export default function PortfolioHome() {
           </a>
         </div>
 
-        {/* <div className="grid gap-5 md:grid-cols-3">
-          {projects.map((project) => (
-            <article
-              key={project.title}
-              className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-xl shadow-black/20"
-            >
-              <div className="mb-4 inline-flex rounded-full bg-violet-400/10 px-3 py-1 text-xs font-semibold text-violet-400">
-                {project.status}
-              </div>
-              <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-300">{project.description}</p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-slate-700 px-3 py-1 text-xs text-slate-300"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </article>
-          ))}
-        </div> */}
-
         <div className="grid gap-5 md:grid-cols-3">
           {projects.map((project) =>(
             <a key={project.title} className="flex flex-col group bg-card border border-card-line shadow-2xs rounded-xl overflow-hidden hover:shadow-lg focus:outline-hidden focus:shadow-lg transition" href="#">
@@ -175,26 +150,109 @@ export default function PortfolioHome() {
 
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-20">
-        <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+      <section id="contact" className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8 shadow-xl shadow-black/20">
+          <div className="grid gap-8 lg:grid-cols-2">
             <div>
-              <h2 className="text-2xl font-bold text-white">Contact</h2>
-              <p className="mt-2 text-slate-300">
-                This website is under active development. More project details, and case studies will be added soon.
+              <p className="text-sm font-medium uppercase tracking-[0.25em] text-violet-400">
+                Contact
               </p>
+
+              <h2 className="mt-3 text-3xl font-bold text-white">
+                Get In Touch
+              </h2>
+
+              <p className="mt-4 leading-7 text-slate-300">
+                I am always happy to connect to discuss potential opportunities,
+                collaborations, or simply have a conversation about data science,
+                quant research, analytics, and technology.
+              </p>
+
+              <div className="mt-6 space-y-4">
+                <div className="rounded-2xl bg-slate-800/80 p-4">
+                  <p className="text-sm font-semibold text-violet-400">Email</p>
+                  <p className="mt-1 block text-slate-300 hover:text-violet-300">
+                    eamon.yuan@outlook.com
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-slate-800/80 p-4">
+                  <p className="text-sm font-semibold text-violet-400">Location</p>
+                  <p className="mt-1 text-slate-300 hover:text-violet-300">
+                    Adelaide, South Australia, Australia
+                  </p>
+                </div>
+
+                <div className="rounded-2xl bg-slate-800/80 p-4">
+                  <p className="text-sm font-semibold text-violet-400">
+                    Availability
+                  </p>
+                  <p className="mt-1 text-slate-300 hover:text-violet-300">
+                    Open to opportunities, collaborations, and conversations over a coffee.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-400 hover:text-violet-400"
+
+            <div>
+              <form
+                action="mailto:eamon.yuan@outlook.com"
+                method="post"
+                encType="text/plain"
+                className="space-y-4"
               >
-                <FileText size={18} /> More Information Coming Soon
-              </a>
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-300">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="Name"
+                    required
+                    className="w-full rounded-2xl border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 focus:border-violet-400 focus:outline-none"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-300">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="Email"
+                    required
+                    className="w-full rounded-2xl border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 focus:border-violet-400 focus:outline-none"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-300">
+                    Message
+                  </label>
+                  <textarea
+                    name="Message"
+                    rows={5}
+                    required
+                    className="w-full rounded-2xl border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 focus:border-violet-400 focus:outline-none"
+                    placeholder="Your message..."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="inline-flex items-center gap-2 rounded-2xl bg-violet-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-violet-500/20 transition hover:bg-violet-300"
+                >
+                  <Mail size={18} />
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </section>
+
     </main>
   );
 }
