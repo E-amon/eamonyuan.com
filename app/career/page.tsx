@@ -226,23 +226,21 @@ export default function CareerPage() {
                     {item.description}
                   </p>
 
-                  <div className="mt-4">
-                    <h4 className="text-sm font-semibold text-white">
-                      Key Achievements
-                    </h4>
+                  <details className="mt-4 group">
+                    <summary className="cursor-pointer list-none text-sm font-semibold text-slate-300 hover:text-violet-300">
+                      <span className="group-open:hidden">▶ More Details</span>
+                      <span className="hidden group-open:inline">▼ Less Details</span>
+                    </summary>
 
-                    <ul className="mt-2 space-y-2 text-sm text-slate-300">
+                    <ul className="mt-3 space-y-2 text-sm text-slate-300">
                       {item.achievements.map((achievement) => (
-                        <li
-                          key={achievement}
-                          className="flex gap-2"
-                        >
+                        <li key={achievement} className="flex gap-2">
                           <span className="mt-1 text-violet-400">•</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </details>
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {item.tags.map((tag) => (
