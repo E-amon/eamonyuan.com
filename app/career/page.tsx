@@ -102,11 +102,11 @@ export default function CareerPage() {
             <a href="/" className="text-sm text-slate-300 hover:text-violet-400">
               Home
             </a>
-            <a href="/projects" className="text-sm text-slate-300 hover:text-violet-400">
-              Projects
-            </a>
             <a href="/career" className="text-sm text-violet-400">
               Career
+            </a>
+            <a href="/projects" className="text-sm text-slate-300 hover:text-violet-400">
+              Projects
             </a>
             <a href="/#contact" className="text-sm text-slate-300 hover:text-violet-400">
               Contact

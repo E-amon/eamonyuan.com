@@ -48,6 +48,9 @@ export default function PortfolioHome() {
           </a>
 
           <div className="flex items-center gap-5">
+            <a href="#" className="text-sm text-slate-300 hover:text-violet-400">
+              Home
+            </a>            
             <a
               href="/career"
               className="text-sm text-slate-300 transition hover:text-violet-400"
