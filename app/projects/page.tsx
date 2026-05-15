@@ -15,7 +15,7 @@ export default function ProjectsPage() {
 
           <div className="flex items-center gap-5">
             <a
-              href="#career"
+              href="/career"
               className="text-sm text-slate-300 transition hover:text-violet-400"
             >
               Career
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
               Projects
             </a>
             <a
-              href="#contact"
+              href="/#contact"
               className="text-sm text-slate-300 transition hover:text-violet-400"
             >
               Contact
