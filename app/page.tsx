@@ -9,7 +9,7 @@ export default function PortfolioHome() {
     {
       title: "Crypto Risk & Prediction Dashboard",
       status: "In Progress",
-      imageLinks:"/images/img_placeholder_1.JPG",
+      imageLinks:"/images/crypto-risk-prediction-dashboard-homepage-image.png",
       description:
         "This project is in progress.",
       tags: ["Python", "Quant"]
@@ -17,9 +17,9 @@ export default function PortfolioHome() {
     {
       title: "Rail Break Prediction Project",
       status: "Industry Placement",
-      imageLinks:"/images/img_placeholder_2.JPG",
+      imageLinks:"/images/rail-break-prediction-homepage-image.png",
       description:
-        "Built machine learning models to predict rail breaks within 30 days using highly imbalanced sensor data, improving accuracy from 38% to 82% and F1 score from 0% to 60%.",
+        "Machine learning project to predict rail breaks using sensor and operational data, focusing on handling class imbalnce and building scalable Databricks ML pipelines.",
       tags: [
         "Databricks",
         "PySpark",
@@ -32,9 +32,9 @@ export default function PortfolioHome() {
     {
       title: "Quant Trading Research",
       status: "Research Project",
-      imageLinks:"/images/img_placeholder_3.JPG",
+      imageLinks:"/images/quant-trading-research-homepage-image.png",
       description:
-        "Designed and optimised automated cryptocurrency trading strategies, achieving +18.9% ROI with an 83% win rate and less than 10% drawdown.",
+        "Algorithmic trading research using Python and Freqtrade including backtesing, risk management, and automated trade support across crypto markets.",
       tags: [
         "Python",
         "Freqtrade",
@@ -100,7 +100,9 @@ export default function PortfolioHome() {
               Eamon Yuan
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-              Data Science, Quant Research, and Software Engineering portfolio. I build data-driven systems using Python, machine learning, analytics pipelines, and web technologies.
+              Data Science, Quantitative Research, and Software Engineering portfolio.
+              I build data-driven systems using Python, machine learning, statistical
+              analysis, data engineering, and modern web technologies.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -135,16 +137,34 @@ export default function PortfolioHome() {
             <h2 className="text-xl font-semibold text-white">Current Focus</h2>
             <div className="mt-5 space-y-4 text-sm text-slate-300">
               <div className="rounded-2xl bg-slate-800/80 p-4">
-                <p className="font-semibold text-violet-400">Quant & Data Science</p>
-                <p className="mt-1">Backtesting, risk analytics, ML prediction, and data engineering.</p>
+                <p className="font-semibold text-violet-400">Quantitative Research & Machine Learning</p>
+                <p className="mt-1">
+                  Building algorithmic trading systems, predictive models, and risk
+                  analytics using Python, machine learning, and statistical methods.
+                </p>
               </div>
               <div className="rounded-2xl bg-slate-800/80 p-4">
-                <p className="font-semibold text-violet-400">Portfolio Build</p>
-                <p className="mt-1">Publishing clean, reproducible projects with live demos and documentation.</p>
+                <p className="font-semibold text-violet-400">
+                  Data Engineering & Analytics
+                </p>
+                <p className="mt-1">
+                  Designing scalable pipelines with Databricks, PySpark, SQL, and
+                  automated workflows for large-scale data processing and model training.
+                </p>
+              </div>
+              <div className="rounded-2xl bg-slate-800/80 p-4">
+                <p className="font-semibold text-violet-400">Portfolio & Technical Projects</p>
+                <p className="mt-1">
+                  Publishing reproducible projects with interactive visualisations,
+                  documentation, and case studies that demonstrate measurable outcomes.
+                </p>
               </div>
               <div className="rounded-2xl bg-slate-800/80 p-4">
                 <p className="font-semibold text-violet-400">Career Direction</p>
-                <p className="mt-1">Targeting data science, quant research, data analytics, and software engineering roles.</p>
+                <p className="mt-1">
+                  Targeting roles in quantitative research, data science, machine
+                  learning, data engineering, and software development.
+                </p>
               </div>
             </div>
           </div>
@@ -169,7 +189,7 @@ export default function PortfolioHome() {
 
         <div className="grid gap-5 md:grid-cols-3">
           {projects.map((project) =>(
-            <a key={project.title} className="flex flex-col group bg-card border border-card-line shadow-2xs rounded-xl overflow-hidden hover:shadow-lg focus:outline-hidden focus:shadow-lg transition" href="#">
+            <a key={project.title} className="flex flex-col group bg-card border border-card-line shadow-2xs rounded-xl overflow-hidden hover:shadow-lg focus:outline-hidden focus:shadow-lg transition" href="/projects">
               <div className="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
                 <img className="size-full absolute top-0 inset-s-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" src={project.imageLinks} alt={project.title}/>
               </div>
