@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { Mail, ExternalLink, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -20,16 +19,29 @@ export default function PortfolioHome() {
       status: "Industry Placement",
       imageLinks:"/images/img_placeholder_2.JPG",
       description:
-        "Applied feature engineering and ML workflows on rail sensor data, improving predictive performance and optimising data pipelines.",
-      tags: ["Databricks", "PySpark", "SQL", "Machine Learning", "XGBoost", "Feature Engineering", "Feature Selection", "Data Visualise"]
+        "Built machine learning models to predict rail breaks within 30 days using highly imbalanced sensor data, improving accuracy from 38% to 82% and F1 score from 0% to 60%.",
+      tags: [
+        "Databricks",
+        "PySpark",
+        "SQL",
+        "Machine Learning",
+        "XGBoost",
+        "Feature Engineering"
+      ]
     },
     {
       title: "Quant Trading Research",
       status: "Research Project",
       imageLinks:"/images/img_placeholder_3.JPG",
       description:
-        "Research-focused automated trading bot with optimised strategy deployed on Binance using historical market data, risk controls, backtesting, and strategy evaluation. (Strategy is not public)",
-      tags: ["Python", "Freqtrade", "Backtesting", "Risk Management"]
+        "Designed and optimised automated cryptocurrency trading strategies, achieving +18.9% ROI with an 83% win rate and less than 10% drawdown.",
+      tags: [
+        "Python",
+        "Freqtrade",
+        "Algorithmic Trading",
+        "Backtesting",
+        "Risk Management"
+      ]
     }
   ];
 
